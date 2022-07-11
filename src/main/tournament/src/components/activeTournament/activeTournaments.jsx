@@ -5,7 +5,7 @@ import deleteTournament from '../buttons/deleteTournament';
 async function tournamentList() {
   try {
     const req = await fetch(
-      'http://localhost:8189/api/v1/app/tournament/tourney/started',
+      'http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/tourney/started',
       {
         method: 'GET',
         headers: {

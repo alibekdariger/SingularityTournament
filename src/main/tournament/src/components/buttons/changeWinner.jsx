@@ -22,7 +22,7 @@ async function newWinner(values) {
   try {
     const token = sessionStorage.getItem("token");
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/admin/change_result?winnerName=${values.winnerName}&winnerSurname=${values.winnerSurname}&match_id=${values.match_id}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/admin/change_result?winnerName=${values.winnerName}&winnerSurname=${values.winnerSurname}&match_id=${values.match_id}`,
       {
         method: "PUT",
         headers: {

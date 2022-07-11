@@ -9,7 +9,7 @@ async function deletePlayer(player_name, player_lastname, tournament_id) {
       tournament_id: tournament_id,
     };
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/admin/delete-player`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/admin/delete-player`,
       {
         method: 'DELETE',
         headers: {

@@ -13,7 +13,7 @@ export default function Profile() {
   const [user, setUser] = useState();
   const profile = useCallback(async () => {
     const token = sessionStorage.getItem('token');
-    const userReq = await fetch('http://localhost:8189/api/v1/app/user', {
+    const userReq = await fetch('http://hack2-jusan.azurewebsites.net/api/v1/app/user', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

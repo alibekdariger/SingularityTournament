@@ -5,7 +5,7 @@ export default async function deleteTournament(id) {
     // console.log(id);
     const token = sessionStorage.getItem('token');
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/admin/delete/${id}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/admin/delete/${id}`,
       {
         method: 'DELETE',
         headers: {

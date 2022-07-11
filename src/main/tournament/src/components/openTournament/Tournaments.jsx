@@ -5,7 +5,7 @@ import deleteTournament from '../buttons/deleteTournament';
 async function tournamentList() {
   try {
     const req = await fetch(
-      'http://localhost:8189/api/v1/app/tournament/tourney/registration',
+      'http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/tourney/registration',
       {
         method: 'GET',
         headers: {
@@ -111,5 +111,5 @@ export default function Tournaments() {
   return <div className="tournamentInfo">No active tournaments</div>;
 }
 
-// http://localhost:8189/api/v1/app/auth
-// http://localhost:8189/api/v1/app/register
+// http://hack2-jusan.azurewebsites.net/api/v1/app/auth
+// http://hack2-jusan.azurewebsites.net/api/v1/app/register

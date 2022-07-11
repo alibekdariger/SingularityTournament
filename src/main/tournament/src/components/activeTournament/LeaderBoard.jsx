@@ -8,7 +8,7 @@ export default function LeaderBoard(id) {
   const makeReq = useCallback(async () => {
     const token = sessionStorage.getItem("token");
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/tournament/tourney/leaderboard/${id.id}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/tourney/leaderboard/${id.id}`,
       {
         method: "GET",
         headers: {

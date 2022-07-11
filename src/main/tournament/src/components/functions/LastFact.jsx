@@ -9,7 +9,7 @@ SwiperCore.use([Navigation, Autoplay]);
 
 async function getFact() {
   const token = sessionStorage.getItem("token");
-  const req = await fetch("http://localhost:8189/api/v1/app/tablo", {
+  const req = await fetch("http://hack2-jusan.azurewebsites.net/api/v1/app/tablo", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,

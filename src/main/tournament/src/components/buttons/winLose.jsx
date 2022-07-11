@@ -30,7 +30,7 @@ async function setWinner(tournamentId, stage, login) {
       surname: surname,
     };
     const reqWinner = await fetch(
-      'http://localhost:8189/api/v1/app/tournament/result-winner',
+      'http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/result-winner',
       {
         method: 'POST',
         body: JSON.stringify(values, null, 2),
@@ -64,7 +64,7 @@ async function setFacts(user, fact, done) {
   };
   try {
     const req = await fetch(
-      'http://localhost:8189/api/v1/app/tournament/info',
+      'http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/info',
       {
         method: 'POST',
         body: JSON.stringify(values, null, 2),

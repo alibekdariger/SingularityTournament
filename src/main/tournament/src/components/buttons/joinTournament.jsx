@@ -17,7 +17,7 @@ async function join(id) {
   try {
     const token = sessionStorage.getItem('token');
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/tournament/join/${id.id}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/join/${id.id}`,
       {
         method: 'POST',
         headers: {

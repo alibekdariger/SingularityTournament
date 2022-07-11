@@ -31,7 +31,7 @@ export default function Login() {
             onSubmit={async (values) => {
               try {
                 const req = await fetch(
-                  'http://localhost:8189/api/v1/app/auth',
+                  'http://hack2-jusan.azurewebsites.net/api/v1/app/auth',
                   {
                     method: 'POST',
                     body: JSON.stringify(values, null, 2),
@@ -51,7 +51,7 @@ export default function Login() {
                 if (reqJ.token) {
                   sessionStorage.setItem('token', `${reqJ.token}`);
                   const userReq = await fetch(
-                    'http://localhost:8189/api/v1/app/user',
+                    'http://hack2-jusan.azurewebsites.net/api/v1/app/user',
                     {
                       method: 'GET',
                       headers: {

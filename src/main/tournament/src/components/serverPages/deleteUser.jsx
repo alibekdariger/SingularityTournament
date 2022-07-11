@@ -38,7 +38,7 @@ export default function DeletetUser() {
                 try {
                   const token = sessionStorage.getItem('token');
                   const req = await fetch(
-                    `http://localhost:8189/api/v1/app/admin/delete-user?username=${values.username}&surname=${values.surname}`,
+                    `http://hack2-jusan.azurewebsites.net/api/v1/app/admin/delete-user?username=${values.username}&surname=${values.surname}`,
                     {
                       method: 'PUT',
                       headers: {

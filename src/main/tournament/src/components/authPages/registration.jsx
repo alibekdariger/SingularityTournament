@@ -34,7 +34,7 @@ export default function Registration() {
             onSubmit={async (values) => {
               try {
                 const req = await fetch(
-                  'http://localhost:8189/api/v1/app/register',
+                  'http://hack2-jusan.azurewebsites.net/api/v1/app/register',
                   {
                     method: 'POST',
                     body: JSON.stringify(values, null, 2),

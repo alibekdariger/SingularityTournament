@@ -20,7 +20,7 @@ export default function ShowFacts(props) {
     const token = sessionStorage.getItem("token");
     const name = user.split(" ");
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/user/info?surname=${name[1]}&name=${name[0]}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/user/info?surname=${name[1]}&name=${name[0]}`,
       {
         method: "GET",
         headers: {

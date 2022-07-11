@@ -23,7 +23,7 @@ async function tournamentDetails(id) {
   const token = sessionStorage.getItem("token");
   try {
     const req = await fetch(
-      `http://localhost:8189/api/v1/app/tournament/tourney/bracket/${id}`,
+      `http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/tourney/bracket/${id}`,
       {
         method: "GET",
         headers: {

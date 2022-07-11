@@ -40,7 +40,7 @@ export default function CreateTournamentPage() {
                   const token = sessionStorage.getItem('token');
 
                   const req = await fetch(
-                    'http://localhost:8189/api/v1/app/tournament/create',
+                    'http://hack2-jusan.azurewebsites.net/api/v1/app/tournament/create',
                     {
                       method: 'POST',
                       body: JSON.stringify(values, null, 2),
